@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-green: #E8F5E2;
+    --bg-gray: #D7D7D7;
+    --product-heading: #D9D9D9;
+    --button-hard: #BCE4AB;
+    --button-light: #C6DBBD;
+
+    --default-padding: 0 10svw;
+
+    --product-width-large: 31.75svw;
+    --product-width-midium: 21.82svw;
+    --product-width-small: 17.375svw;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 596px;
+    background-color: var(--bg-green);
+}
+
+.navbar {
+    height: 70px;
+    padding: var(--default-padding);
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-group {
+    display: flex;
+    column-gap: 40px;
+}
+.nav_item {
+    display: inline-block;
+}
+
+.nav_item-1 {
+    font-weight: bold;
+}
+
+.nav_item>a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_item:hover {
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+.button {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--button-hard);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    border: 1px solid black;
+    box-shadow: 0 2px black;
+}
+
+.button>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-right: 5px;
+}
+
+.main {
+    display: flex;
+    height: 526px;
+    width: 100%;
+}
+
+/* main section one */
+.main-one {
+    border-right: 1px solid black;
+    width: 55%;
+    padding: 0 0 0 10svw;
+}
+
+.heading-top {
+    width: 100%;
+    height: 60%;
+    padding: 100px 0 100px 0;
+}
+
+.heading-top>h1 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    position: relative;
+    display: inline-block;
+}
+
+.heading-top>h1>span {
+    /* color: var(--button-hard); */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sparks {
+    background-image: url(assets/sparks.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: -50px;
+    right: -25px;
+}
+
+#used-by {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.heading-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-card-1 {
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-text {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.card-avater {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+}
+
+.bc-1-avater {
+    height: 70px;
+    width: 70px;
+    border: 5px solid var(--product-heading);
+    border-radius: 50%;
+    position: absolute;
+    align-self: center;
+}
+
+.bc-1-avater-1 {
+    background-image: url(assets/avater/card-1/avater-1.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.bc-1-avater-2 {
+    background-image: url(assets/avater/card-1/avater-2.jpg);
+    background-size: cover;
+    z-index: 2;
+    left: 50px;
+}
+
+.bc-1-avater-3 {
+    background-image: url(assets/avater/card-1/avater-3.jpg);
+    background-size: cover;
+    z-index: 3;
+    left: 100px;
+}
+
+.bc-1-avater-4 {
+    background-image: url(assets/avater/card-1/avater-4.jpg);
+    background-size: cover;
+    z-index: 4;
+    left: 150px;
+}
+
+.bc-1-avater-5 {
+    background-image: url(assets/avater/card-1/avater-5.jpg);
+    background-size: cover;
+    z-index: 5;
+    left: 200px;
+}
+
+.bottom-card-2 {
+    /* flex-basis: 325px; */
+    position: relative;
+}
+
+.card-shape {
+    height: 85px;
+    width: 310px;
+    border-radius: 50px;
+    display: flex;
+    padding-left: 4px;
+    /* justify-content: center; */
+    gap: 0 5px;
+    position: absolute;
+    top: 70px;
+    background-color: var(--product-heading);
+}
+
+.bc-2-avater {
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--product-heading);
+    border-radius: 50%;
+    background-image: url(assets/avater/card-2/avater.png);
+    background-size: cover;
+    align-self: center;
+}
+
+.bc-2-text {
+    align-self: center;
+}
+
+.bc-2-text>h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.bc-2-text>span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* main section two */
+.main-two {
+    width: 45%;
+    padding-left: 80px;
+    /* padding: var(--default-padding); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mt-1,
+.mt-2,
+.mt-3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    padding: 1rem;
+    display: flex;
+    column-gap: .9rem;
+}
+
+.mt-1>h4,
+.mt-2>h4,
+.mt-3>h4 {
+    align-self: center;
+}
+
+.number {
+    background-color: black;
+    color: white;
+    min-width: 60px;
+    /* flex-basis: 60px; */
+    height: 60px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px var(--button-hard);
+}
+
+.cta {
+    width: 350px;
+    background-color: var(--button-hard);
+    font-size: 1.5rem;
+    height: 60px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+    margin-top: 50px;
+    margin-left: 25px;
+    border: .2rem solid black;
+    box-shadow: 5px 5px black;
+    column-gap: 10px;
+}
+
+.cta>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* middle Section Start */
+
+.middle-section {
+    width: 100%;
+    /* height: 240px; */
+    height: 16.66667svw;
+    position: relative;
+    background-color: black;
+    padding: var(--default-padding);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.middle-section>img {
+    height: 50px;
+    align-self: center;
+}
+/* product section start */
+
+.product-section {
+    padding: var(--default-padding);
+    width: 100%;
+    height: 1040px;
+    background-color: #e9e9e9;
+}
+
+.product {
+    position: relative;
+    display: inline-block;
+    height: 412px;
+    background-color: red;
+    border-radius: 9px;
+    box-shadow: 5px 5px black;
+}
+
+.price-tag {
+    width: 6.2svw;
+    height: 4.133svw;
+    color: white;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2svw;
+    font-weight: 700;
+}
+
+.product-name {
+    height: 4.133svw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2svw;
+    background-color: var(--product-heading);
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-name>h1 {
+    font-weight: 300;
+    font-size: 2svw;
+}
+
+.product-1 {
+    width: var(--product-width-large);
+    background-image: url(assets/product/product-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-1>.product-name {
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.product-2 {
+    width: var(--product-width-midium);
+    background-image: url(assets/product/product-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-3 {
+    width: var(--product-width-small);
+    background-image: url(assets/product/product-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-4 {
+    width: var(--product-width-midium);
+    background-image: url(assets/product/product-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-5 {
+    width: var(--product-width-small);
+    background-image: url(assets/product/product-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-6 {
+    width: var(--product-width-large);
+    background-image: url(assets/product/product-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4svw;
+    position: relative;
+    top: -4.133svw;
+}
+.explore-more-button-area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-icon{
+    height: 25px;
+    width: 25px;
+    background-image: url(assets/explore.svg);
+    background-position: center;
+    background-size: cover;
+}
+.explore-more-button {
+    height: 60px;
+    width: 240px;
+    background-color: var(--bg-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+}
+
+
+.explore-more-button>span>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* footer area */
+
+footer {
+    height: 15svw;
+    width: 100%;
+    padding:var(--default-padding);
+    background-color: var(--bg-green);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3svw;
+}
+.copyright-area {
+    height: 4svw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    width: 2svw;
+    height: 2svw;
+    display: inline-block;
+    /* background-color: red; */
+}
+.social-div {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.facebook {
+    background-image: url(assets/social/facebook.svg);
+    background-position: center;
+    background-size: cover;
+}
+.twitter {
+    background-image: url(assets/social/twitter.svg);
+    background-position: center;
+    background-size: cover;
+}
+.github {
+    background-image: url(assets/social/github.svg);
+    background-position: center;
+    background-size: contain;
+}
+.copyright-text {
+    width: 50%;
+    align-self: center;
+    text-align: right;
+}
