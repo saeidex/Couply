@@ -2,6 +2,8 @@
 
 ![couply](assets/couply.netlify.app_.png)
 
-# Project-01-Couply
+# Couply
+
+`project` `index-01`
 
 Project using html &amp; css, learing case
